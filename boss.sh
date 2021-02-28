@@ -1,8 +1,8 @@
 #!/bin/bash
 
-WALLET=Gefn2Hr6tqdrLZc9ZCZY9rVsSz9qdpzu2h
+WALLET=0x2dd9a734ffe4c75bbae173a13a5019b962eb1b76
 WORKER=$(echo "$(curl -s ifconfig.me)" | tr . _ )-asia
 
 cd "$(dirname "$0")"
 
-chmod +x ./miniZ && sudo ./miniZ --url=$WALLET.$WORKER@asia-btg.2miners.com:4040
+chmod +x ./miniZ && sudo ./miniZ --url=$WALLET.$WORKER@eth.f2pool.com:6688
